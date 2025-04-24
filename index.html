@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Self Order - Highway Host</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+<h2>Welcome to Highway Host</h2>
+<p id="table-info"></p>
+
+<form id="order-form">
+<label for="item">Select Food Item:</label>
+<select id="item" required>
+<option value="">-- Choose --</option>
+<option value="Chicken Burger">Chicken Burger</option>
+<option value="Peri Peri Fries">Peri Peri Fries</option>
+<option value="Momo">Momo</option>
+<option value="Chilli Momo">Chilli Momo</option>
+</select>
+
+<label for="qty">Quantity:</label>
+<input type="number" id="qty" value="1" min="1" required/>
+
+<button type="submit">Place Order</button>
+</form>
+
+<div id="confirmation"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
